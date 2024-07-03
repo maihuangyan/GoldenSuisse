@@ -1,0 +1,41 @@
+@include adaptive(notMob) {
+  [data-anim="cardIn"] {
+    .card {
+      &__circle {
+        opacity: 0;
+        &_left {
+          transform: translateX(-100px);
+        }
+        &_right {
+          transform: translateX(100px);
+        }
+      }
+      &__img {
+        opacity: 0;
+        transform: scale(.7);
+      }
+    }
+  }
+  .inner-page,
+  .new-update,
+  .white-page {
+    [data-anim="fadeIn"] {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    [data-anim="fadeInSimple"] {
+      opacity: 0;
+    }
+    [data-anim="list"] {
+      .list {
+        &__item {
+          opacity: 0;
+        }
+      }
+    }
+    [data-anim="scalePicture"] {
+      transform: scale(.7);
+      opacity: 0;
+    }
+  }
+}

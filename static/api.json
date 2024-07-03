@@ -1,0 +1,15 @@
+{
+  "MY_ACCOUNT": {
+    "ENDPOINT": "https://beta-v1.goldensuisse.com/myaccount",
+    "RESET_REDIRECT": "https://beta-v1.goldensuisse.com/account",
+    "LOGIN_CHECK": "/login_check",
+    "REDIRECT": "/overview",
+    "FORGET": "/forgot-password",
+    "RESET": "/reset-password",
+    "AUTH_CHECK": "/validate_auth_code",
+    "SEND_EMAIL": "/email_send"
+  },
+  "WEBSITE": {
+    "PRICE": "https://sandbox.goldensuisse.com/gcb_gold_silver_pricing"
+  }
+}

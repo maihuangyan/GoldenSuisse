@@ -1,0 +1,51 @@
+{
+  "name": "goldensuisse",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "SergKif",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "aos": "^2.3.4",
+    "bootstrap-vue": "^2.23.1",
+    "cookie-universal-nuxt": "^2.2.2",
+    "gsap": "^3.2.6",
+    "nuxt": "^2.0.0",
+    "velocity-animate": "^1.5.2",
+    "vue-mutation-observer": "^0.1.2",
+    "vue-server-renderer": "^2.7.16",
+    "vue-the-mask": "^0.11.1",
+    "vue-touch": "^2.0.0-beta.4",
+    "vue2-hammer": "^2.1.2"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1",
+    "@nuxtjs/device": "^2.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^7.0.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^10.4.1"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 3001
+    }
+  }
+}

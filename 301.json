@@ -1,0 +1,4 @@
+[
+  { "from": "/advisory/", "to": "/advisory" },
+  { "from": "/awards/", "to": "/awards" }
+]

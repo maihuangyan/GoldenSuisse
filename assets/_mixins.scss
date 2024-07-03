@@ -1,0 +1,76 @@
+@mixin adaptive($size) {
+  @if $size == mob {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 1024px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $size == tablet-port {
+    @media (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {
+      @content;
+    }
+  } @else if $size == tablet-land {
+    @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $size == desk-sm {
+    @media (min-width: 1366px) and (max-width: 1680px) {
+      @content;
+    }
+  } @else if $size == desktop-big {
+    @media (min-width: 1921px) {
+      @content;
+    }
+  } @else if $size == notMob {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin adaptive($size) {
+  @if $size == mob {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 1024px) and (max-width: 1365px) {
+      @content;
+    }
+  } @else if $size == tablet-port {
+    @media (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {
+      @content;
+    }
+  } @else if $size == tablet-land {
+    @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $size == desk-sm {
+    @media (min-width: 1366px) and (max-width: 1680px) {
+      @content;
+    }
+  } @else if $size == desktop-big {
+    @media (min-width: 1921px) {
+      @content;
+    }
+  } @else if $size == notMob {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+%default-text {
+  font-family: Arial;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: #fff;
+  font-weight: 400;
+}
+.white-page {
+  %default-text {
+    color: $black;
+  }
+}
